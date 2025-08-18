@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "GNU LGPL 3.0"
+
+[[mods]]
+modId = "initialization"
+version = "${version}"
+logoFile = "assets/initialization/icon.png"
+displayName = "Initialization"
+authors = "TexTrue"
+description = '''
+Common ModInitializer based on Integration.
+'''
+
+[[dependencies.initialization]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.initialization]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "initialization.mixins.json"

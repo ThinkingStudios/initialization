@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "initialization",
+  "version": "${version}",
+  "name": "Initialization",
+  "description": "Common ModInitializer based on Integration.",
+  "authors": [
+    "TexTrue"
+  ],
+  "contact": {
+    "source": ""
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/initialization/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.thinkingstudio.initialization.fabric.InitializationFabric"
+    ],
+    "client": [
+      "org.thinkingstudio.initialization.fabric.client.InitializationFabricClient"
+    ],
+    "server": [
+      "org.thinkingstudio.initialization.fabric.server.InitializationFabricServer"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
