@@ -12,3 +12,6 @@ rootProject.name = 'initialization'
 include 'common'
 include 'fabric'
 include 'neoforge'
+
+include 'testmod-neoforge'
+include 'testmod-fabric'

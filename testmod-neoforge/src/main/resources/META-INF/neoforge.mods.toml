@@ -4,23 +4,22 @@ loaderVersion = "[2,)"
 license = "GNU LGPL 3.0"
 
 [[mods]]
-modId = "initialization"
-version = "${version}"
-logoFile = "assets/initialization/icon.png"
-displayName = "Initialization"
+modId = "initialization_test"
+version = "0.1.0"
+displayName = "Initialization Test Mod"
 authors = "TexTrue"
 description = '''
 Common ModInitializer based on Integration.
 '''
 
-[[dependencies.initialization]]
+[[dependencies.initialization_test]]
 modId = "neoforge"
 type = "required"
 versionRange = "[21,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.initialization]]
+[[dependencies.initialization_test]]
 modId = "minecraft"
 type = "required"
 versionRange = "[1.21,)"

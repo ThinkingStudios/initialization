@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "initialization",
+  "id": "initialization_test",
   "version": "${version}",
-  "name": "Initialization",
+  "name": "Initialization Test Mod",
   "description": "Common ModInitializer based on Integration.",
   "authors": [
     "TexTrue"
@@ -14,14 +14,14 @@
   "icon": "assets/initialization/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "org.thinkingstudio.initialization.fabric.InitializationFabric::onInitialize"
+    "main_init": [
+      "org.thinkingstudio.initialization.test.fabric.TestModFabric"
     ],
-    "client": [
-      "org.thinkingstudio.initialization.fabric.InitializationFabric::onInitializeClient"
+    "client_init": [
+      "org.thinkingstudio.initialization.test.fabric.client.TestModFabricClient"
     ],
-    "server": [
-      "org.thinkingstudio.initialization.fabric.InitializationFabric::onInitializeServer"
+    "server_init": [
+      "org.thinkingstudio.initialization.test.fabric.server.TestModFabricServer"
     ]
   },
   "depends": {
