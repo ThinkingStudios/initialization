@@ -8,6 +8,7 @@ modId = "initialization"
 version = "${version}"
 logoFile = "assets/initialization/icon.png"
 displayName = "Initialization"
+displayURL = "https://github.com/ThinkingStudios/initialization"
 authors = "TexTrue"
 description = '''
 Common ModInitializer based on Integration.
