@@ -15,13 +15,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "org.thinkingstudio.initialization.fabric.InitializationFabric::onInitialize"
-    ],
-    "client": [
-      "org.thinkingstudio.initialization.fabric.InitializationFabric::onInitializeClient"
-    ],
-    "server": [
-      "org.thinkingstudio.initialization.fabric.InitializationFabric::onInitializeServer"
+      "org.thinkingstudio.initialization.fabric.InitializationFabric"
     ]
   },
   "depends": {
