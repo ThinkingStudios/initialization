@@ -13,7 +13,6 @@ public class InitializationFabric implements net.fabricmc.api.ModInitializer {
     @Override
     public void onInitialize() {
         EntryPointManager.getEntryPoints(EntrypointContexts.MAIN_INITIALIZER_KEY, ModInitializer.class).forEach(ModInitializer::onInitialize);
-
         ModEnvExecutor.runInEnv(ModEnv.CLIENT, () -> () -> {
             EntryPointManager.getEntryPoints(EntrypointContexts.CLIENT_INITIALIZER_KEY, ClientModInitializer.class).forEach(ClientModInitializer::onInitializeClient);
         });

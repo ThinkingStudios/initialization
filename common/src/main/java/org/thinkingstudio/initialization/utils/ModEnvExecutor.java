@@ -1,24 +1,15 @@
 package org.thinkingstudio.initialization.utils;
 
-import net.fabricmc.api.EnvType;
 import org.thinkingstudio.initialization.ModPlatform;
 
 import java.util.Optional;
 import java.util.function.Supplier;
 
 public final class ModEnvExecutor {
-    public static void runInEnv(EnvType type, Supplier<Runnable> runnableSupplier) {
-        runInEnv(ModEnv.fromPlatform(type), runnableSupplier);
-    }
-
     public static void runInEnv(ModEnv type, Supplier<Runnable> runnableSupplier) {
         if (ModPlatform.INSTANCE.getEnvironment() == type) {
             runnableSupplier.get().run();
         }
-    }
-
-    public static <T> Optional<T> getInEnv(EnvType type, Supplier<Supplier<T>> runnableSupplier) {
-        return getInEnv(ModEnv.fromPlatform(type), runnableSupplier);
     }
 
     public static <T> Optional<T> getInEnv(ModEnv type, Supplier<Supplier<T>> runnableSupplier) {
