@@ -9,6 +9,6 @@ import org.thinkingstudio.initialization.utils.ModEnv;
 public class ModPlatformImpl implements ModPlatform {
     @Override
     public ModEnv getEnvironment() {
-        return ModEnv.fromPlatform(FMLLoader.getDist());
+        return ModEnv.fromPlatform(FMLLoader.getCurrent().getDist());
     }
 }
